@@ -35,7 +35,7 @@ cacheSolve <- function(x, ...) {
 
         matrix <- x$get()
         ## `solve' is used to compute the inverse of the matrix
-        inverse <- solve(matrix)
+        inverse <- solve(matrix, ...)
 
         ## We computed the inverse, now make sure we also cache it.
         x$setinv(inverse)
