@@ -1,5 +1,5 @@
 ## Create a wrapper around `x' that's capable of caching its inverse, in order
-## to save computation time if `x' is particularily large.
+## to save computation time if `x' is particularly large.
 makeCacheMatrix <- function(x = matrix()) {
 	cachedInverse <- NULL
 	set <- function(y) {
